@@ -1,0 +1,4 @@
+ZADANIE 2. BAZY DANYCH
+
+Zamodeluj relacyjną bazę danych do obsługi sklepu z grami komputerowymi.
+Forma opisu dowolna, jednak preferowana w postaci diagramu. Jasno uwzględnij rodzaj relacji (ile do ilu) między tabelami/obiektami. Zależy nam na koncepcie, więc uwzględnij tylko niezbędne atrybuty i encje. Sklep może być internetowy lub stacjonarny.
