@@ -1,13 +1,13 @@
 from datetime import date
 
 class Customer:
-    def __init__(self, first_name:str, last_name:str, pesel:str, address:str, birth_date:str):
+    def __init__(self, first_name:str, last_name:str, pesel:str, address:str, birth_date:str, promotion_applied:bool = False):
         self.first_name = first_name
         self.last_name = last_name
         self.pesel = pesel
         self.address = address
         self.birth_date = date.fromisoformat(birth_date)
-        self.promotion_applied = False
+        self.promotion_applied = promotion_applied
 
     def __str__(self):
         return f'Customer("{self.first_name}", "{self.last_name}", "{self.pesel}", "{self.address}", "{self.birth_date.isoformat()}", "{self.promotion_applied}")'
