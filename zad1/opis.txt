@@ -1,0 +1,10 @@
+ZADANIE 1. PROGRAM “BACKENDOWY”
+
+Napisz program, na podstawie danych poniżej, wykorzystując dowolny, obiektowy język programowania.
+Założenia programu:
+• Pobierana jest lista klientów (dane mogą być wpisane na sztywno w programie)
+• Klienci posiadają informację o: Imieniu, Nazwisku, numerze pesel, Adresie, dacie urodzenia
+oraz polu oznaczającym, czy klient jest w objęty promocją (domyślnie żaden nie jest objęty)
+• Dla klientów w przedziale wiekowym 18 - 26 lat należy przypisać informację, że są objęci
+promocją
+• Wszyscy klienci objęci promocją, zostaną serializowani do formatu JSON.
