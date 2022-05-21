@@ -1,0 +1,12 @@
+ZADANIE 3. STRONA HTML
+
+Stwórz stronę HTML, zgodnie z poniższymi założeniami: Założenia strony:
+• Baner tytułowy ma posiadać obrazek, po kliknięciu w który strona powinna się odświeżyć
+• Boczne banery reklamowe nie powinny zajmować więcej niż 40% szerokości strony
+• Stopka powinna posiadać informację o autorze (imię i nazwisko)
+• Sekcja „Dane” ma być siatką 3x4 zawierającą kafelki z danymi. Dane dowolne.
+• Kafelek ma zachowywać co najmniej jeden statyczny napis
+• Po najechaniu kursorem na kafelek, kafelek powinien zwiększyć się o 5% i zmienić kolor.
+• W momencie zjechania kursora poza kafelek, powinien on wrócić do pierwotnego stanu
+• Kafelek ma zawierać guzik, po wciśnięciu którego kafelek znika oraz wyskakuje alert z
+komunikatem “usunięto dane”
