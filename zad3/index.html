@@ -4,42 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zadanie 3 - Strona HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
   <body>
-    <div class="titleBanner container-fluid">
+    <div class="title-banner container-fluid">
         <header class="p-3 border-bottom">
-            <h1>
-              <a href="">
-                <img src="img/tag_img.png" alt="tag_img" /> Zadanie 3 - Strona HTML
-              </a>
-            </h1>
+          <a href="">
+            <img src="img/tag_img.png" alt="tag_img" /> 
+            <h1 class="align-middle">Zadanie 3 - Strona HTML</h1>
+          </a>
         </header>
     </div>
 
-    <div class="container-fluid py-3 middleSection">    
-      <div class="row">
-        <div class="sideBanner col-2 px-3">
-            <div class="ad">Ad</div>
-            <div class="ad">Ad</div>
+    <div class="middle-section container-fluid py-3 h-75">    
+      <div class="row h-100">
+        <div class="side-banner col-2 px-2">
+            <div class="ad"><span class="align-middle">Ad</span></div>
+            <div class="ad text-center">Ad</div>
             <div class="ad">Ad</div>
         </div>
-        <div class="data-container col-8 px-2"> 
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-            <div class="data">Data</div>
-        </div>
-        <div class="sideBanner col-2 px-2">
+        <div id="data-container"class="col-8 px-2"></div>
+        <div class="side-banner col-2 px-2">
             <div class="ad">Ad</div>
             <div class="ad">Ad</div>
             <div class="ad">Ad</div>
@@ -47,12 +34,14 @@
       </div>
     </div>
       
-    <div class="container-fluid footer pt-3">
+    <div class="footer container-fluid">
       <footer class="pt-2 border-top">
         <p>Autor: Mateusz Czeleń</p>
       </footer>
     </div>
 
+    <script type="text/javascript" src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+    
+</body>
 </html>

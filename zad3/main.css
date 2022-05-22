@@ -1,63 +1,62 @@
-body {
-    height: 100vh;
+html, body {
+    height: 100%;
     color: rgb(204, 204, 204);
     background-color: rgb(50, 50, 50) !important;
+    margin: 0px; padding: 0px;
 }
 
-.titleBanner{
+.title-banner{
     color: rgb(156, 219, 253);
-    /* height: 120px; */
-    float: left;
 }
-.titleBanner a {
+
+a, a:hover {
     color: inherit;
     text-decoration: inherit;
 }
-.titleBanner a:hover {
-    color: inherit;
-    text-decoration: inherit; 
+
+.title-banner h1{
+    display: inline;
 }
 
-.titleBanner img{
-    margin-right: 10px;
+.title-banner img{
+    margin-right: 20px;
     border-radius: 10px;
+    height: 80px;
 }
 
-.data-container{
+
+#data-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+}
+.side-banner{
+    display: grid;
+    height: 100%;
 }
 
-.data{
+.tile{
     background-color: rgb(70, 70, 70);
-    margin: 5px;
+    margin: 6px;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .data:hover{
     background-color: rgb(206, 145, 120);
     transform: scale(1.05);
-}
-
-.middleSection{
-    /* height: 100%; */
-    /* background-color: rgb(246, 248, 222); */
-}
-
-.footer{
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* background-color: rgb(225, 249, 248); */
-    height: 80px;
+    transition:background-color 0.3s linear,transform 0.3s linear;
 }
 
 .ad{
     background-color: rgb(70, 70, 70);
-    height:140px;
-    margin: 5px;
-    text-align: center;
-    line-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
 }
-
-
+.disappeared{
+    opacity: 0;
+    visibility: hidden;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}
