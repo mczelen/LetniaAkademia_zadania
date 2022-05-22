@@ -1,6 +1,7 @@
 ZADANIE 3. STRONA HTML
 
-Stwórz stronę HTML, zgodnie z poniższymi założeniami: Założenia strony:
+Stwórz stronę HTML, zgodnie z poniższymi założeniami: 
+Założenia strony:
 • Baner tytułowy ma posiadać obrazek, po kliknięciu w który strona powinna się odświeżyć
 • Boczne banery reklamowe nie powinny zajmować więcej niż 40% szerokości strony
 • Stopka powinna posiadać informację o autorze (imię i nazwisko)

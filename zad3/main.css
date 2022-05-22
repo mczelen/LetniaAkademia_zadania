@@ -3,9 +3,24 @@ body {
     color: rgb(204, 204, 204);
     background-color: rgb(50, 50, 50) !important;
 }
-.headerBanner{
-    color: rgb(156,219, 253);
-    height: 120px;
+
+.titleBanner{
+    color: rgb(156, 219, 253);
+    /* height: 120px; */
+    float: left;
+}
+.titleBanner a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.titleBanner a:hover {
+    color: inherit;
+    text-decoration: inherit; 
+}
+
+.titleBanner img{
+    margin-right: 10px;
+    border-radius: 10px;
 }
 
 .middleSection{
