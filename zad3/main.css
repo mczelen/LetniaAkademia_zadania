@@ -23,6 +23,23 @@ body {
     border-radius: 10px;
 }
 
+.data-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.data{
+    background-color: rgb(70, 70, 70);
+    margin: 5px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.data:hover{
+    background-color: rgb(206, 145, 120);
+    transform: scale(1.05);
+}
+
 .middleSection{
     /* height: 100%; */
     /* background-color: rgb(246, 248, 222); */
@@ -37,10 +54,10 @@ body {
 
 .ad{
     background-color: rgb(70, 70, 70);
-    height: 90px;
-    margin-top: 2px;
+    height:140px;
+    margin: 5px;
     text-align: center;
-    line-height: 90px;
+    line-height: 140px;
 }
 
 
