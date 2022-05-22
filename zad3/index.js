@@ -2,7 +2,7 @@ function createBtn(div) {
     let btn = document.createElement("button");
     btn.innerHTML = '<i class="fa fa-trash-o"></i>';
     btn.type = "button";
-    btn.classList.add("btn", "btn-outline-danger");
+    btn.classList.add("btn", "btn-outline-danger", "btn-lg");
     btn.onclick = function () {
         div.classList.add("disappeared");
         alert("usunięto dane");
