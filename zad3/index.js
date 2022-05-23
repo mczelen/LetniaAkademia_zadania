@@ -4,9 +4,9 @@ function createBtn(div) {
     btn.type = "button";
     btn.classList.add("btn", "btn-outline-danger", "btn-lg");
     btn.onclick = function () {
-        div.classList.add("disappeared");
         alert("usunięto dane");
-      };
+        div.classList.add("disappeared");
+    };
     return btn;
   }
 

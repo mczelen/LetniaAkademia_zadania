@@ -26,11 +26,11 @@ a, a:hover {
 }
 
 .middle-section{
-    height: 75vh;
+    height: 75%;
 }
 #data-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 100%;
 }
 .side-banner{
@@ -42,17 +42,19 @@ a, a:hover {
     background-color: rgb(108,108, 108);
     font-size:20px;
     margin: 6px;
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 10px;
-    transition:background-color 0.3s linear,transform 0.3s linear;
+    transition: background-color 0.3s linear,transform 0.3s linear, color 0.3s linear;
 }
 
 .tile:hover{
     background-color: rgb(214, 185, 125);
     color: rgb(50, 50, 50);
     transform: scale(1.05);
-    transition: background-color 0.3s linear, transform 0.3s linear;
+    transition: background-color 0.3s linear, transform 0.3s linear, color 0.3s linear;
 }
 
 .ad{
