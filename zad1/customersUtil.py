@@ -4,9 +4,17 @@ from datetime import date
 
 class CustomersUtil:
     
-    # Loads hardcoded customers data (by default no customer has promotion applied)
+    # Loads customers data (by default no customer has promotion applied) 
+    # If filename parameter is specified load data from ile, else load hardcoded data
     @staticmethod
-    def load_customers():
+    def load_customers(filename=None):
+        if filename:
+            # load json data from file
+            with open(f'zad1/{filename}') as json_file:
+                data = json.load(json_file)
+            # iterate over customers list and unpack dict to Customer constructor
+            return [Customer(**record) for record in data]
+
         return [
             Customer("Thomas", "Calderon", "09291112345", "Thomas's address", "2009-09-11"),
             Customer("Derek", "Jones", "99050712345", "Derek's address", "1999-05-07"),
@@ -40,5 +48,12 @@ class CustomersUtil:
                 return obj.isoformat()
             return json.JSONEncoder().default(obj)
 
-        json_c = json.dumps([customer.__dict__ for customer in customers], default=date_handler)
-        print(json_c)
+        json_string = json.dumps([customer.__dict__ for customer in customers], default=date_handler)
+        print(json_string)
+        return json_string
+
+    # Saves JSON file
+    @staticmethod
+    def save_json(filename, content):
+        with open(f'zad1/{filename}.json', 'w') as outfile:
+            outfile.write(content)
